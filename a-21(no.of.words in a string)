@@ -4,12 +4,18 @@
 int main()
 {
     char s[max] = { 0 };
-    int i = 0,count = 0;
-    scanf("%[^\n]s",s);
-    for (i = 0;s[i] != '\0';i++)
-    {
-        if (s[i] == ' ' )
-        count++;    
-    }
+    int len,i = 0,count = 1;
+    scanf("%[^\n]",s);
+    len=strlen(s);
+   
+ 
+		for (int i = 0; i < len - 1; i++)
+		{
+			if ((s[i] == ' ') && (s[i+1] != ' '))
+			{
+				count++;
+ 
+			}
+		}
     printf("%d",count);
 }
