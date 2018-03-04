@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define max 25
+
+int main()
+{
+    char s[max] = { 0 };
+    int i = 0,count = 0;
+    scanf("%[^\n]s",s);
+    for (i = 0;s[i] != '\0';i++)
+    {
+        if (s[i] == ' ' )
+        count++;    
+    }
+    printf("%d",count);
+}
