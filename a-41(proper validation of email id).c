@@ -4,6 +4,7 @@ int main() {
 	//code
 	char c[max]={0};
 	int i=0,flag=1;
+	printf("enter a  mail id");
 	scanf("%[^\n]",c);
 	printf("entered mail id is: %s",c);
 	printf("\n mail is :");
